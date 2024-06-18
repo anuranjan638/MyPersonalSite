@@ -20,6 +20,7 @@
         }
         nav {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             background-color: #333;
         }
@@ -28,6 +29,7 @@
             padding: 1rem;
             text-decoration: none;
             text-align: center;
+            flex: 1;
         }
         nav a:hover {
             background-color: #ddd;
@@ -41,9 +43,6 @@
             color: white;
             text-align: center;
             padding: 1rem;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
         .content {
             max-width: 800px;
@@ -57,6 +56,18 @@
         }
         .project h3, .blog-post h3 {
             margin-top: 0;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                padding: 0.5rem;
+                flex-basis: 100%;
+            }
+            section {
+                padding: 1rem;
+            }
+            .content {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -91,12 +102,20 @@
     <section id="travel-blog" class="content">
         <h2>Travel Blog</h2>
         <div class="blog-post">
-            <h3>Exploring the Mountains of Nepal</h3>
-            <p>My recent trip to Nepal was an unforgettable experience. I trekked through the Himalayas, visited ancient temples, and immersed myself in the rich culture of the region. Highlights included the stunning views from Annapurna Base Camp and the serene beauty of Phewa Lake in Pokhara.</p>
+            <h3>Exploring the Beaches of Goa</h3>
+            <p>My trip to Goa was an amazing experience filled with sun, sand, and sea. I enjoyed exploring the beautiful beaches, trying out water sports, and experiencing the vibrant nightlife. The local cuisine was a treat with its unique blend of spices and flavors.</p>
         </div>
         <div class="blog-post">
-            <h3>A Journey through the Streets of Tokyo</h3>
-            <p>Tokyo is a city that seamlessly blends tradition with modernity. During my visit, I explored bustling markets, historic shrines, and cutting-edge technology districts. The culinary scene was another highlight, with delicious ramen, sushi, and street food at every corner.</p>
+            <h3>The Spiritual Journey to Puri</h3>
+            <p>Puri is a place of great spiritual significance. Visiting the Jagannath Temple was a profound experience. I also enjoyed the serene beaches and the rich cultural heritage of the city. The annual Rath Yatra festival was a sight to behold.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Adventures in Gangtok</h3>
+            <p>Gangtok, the capital of Sikkim, offered breathtaking views of the Himalayas. I visited several monasteries, enjoyed the local cuisine, and trekked through scenic trails. The city's vibrant culture and friendly people made the trip unforgettable.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Discovering Darjeeling</h3>
+            <p>Darjeeling, known for its tea plantations, was a delightful destination. I enjoyed the beautiful sunrise at Tiger Hill, visited the famous Darjeeling Himalayan Railway, and explored the lush tea gardens. The cool climate and serene environment were perfect for relaxation.</p>
         </div>
     </section>
     <footer>
