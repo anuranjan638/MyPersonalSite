@@ -1,125 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuranjan Singh - Personal Webpage</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-            text-align: center;
-            flex: 1;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        section {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        .content {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 2rem;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .project, .blog-post {
-            margin-bottom: 2rem;
-        }
-        .project h3, .blog-post h3 {
-            margin-top: 0;
-        }
-        @media (max-width: 600px) {
-            nav a {
-                padding: 0.5rem;
-                flex-basis: 100%;
-            }
-            section {
-                padding: 1rem;
-            }
-            .content {
-                padding: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anuranjan Singh - Software Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Anuranjan Singh</h1>
-        <p>Software Developer | Travel Enthusiast</p>
-    </header>
+  <header>
+    <h1>Anuranjan Singh</h1>
+    <p>Software Developer</p>
     <nav>
-        <a href="#projects">Projects</a>
-        <a href="#travel-blog">Travel Blog</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <section id="projects" class="content">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>PowerApps Project 1: Employee Directory</h3>
-            <p>This PowerApps project is an Employee Directory app that allows users to search for employees by name, department, or role. It integrates with Microsoft Azure Active Directory to fetch employee details, including contact information and organizational hierarchy. The app provides an easy-to-use interface for managing and updating employee data.</p>
-        </div>
-        <div class="project">
-            <h3>PowerApps Project 2: Expense Tracker</h3>
-            <p>The Expense Tracker app helps employees submit and manage their expense reports. Users can upload receipts, categorize expenses, and track the approval status of their submissions. The app integrates with Microsoft SharePoint for data storage and uses Power Automate for workflow automation, ensuring a smooth approval process.</p>
-        </div>
-        <div class="project">
-            <h3>Power Automate Project 1: Automated Email Notifications</h3>
-            <p>This Power Automate project is designed to send automated email notifications to employees based on certain triggers. For example, when a new document is uploaded to a SharePoint library, the workflow sends an email to relevant stakeholders. The flow also includes error handling and logging to ensure reliable operation.</p>
-        </div>
-        <div class="project">
-            <h3>Power Automate Project 2: Data Synchronization</h3>
-            <p>The Data Synchronization flow connects multiple data sources, such as SQL Server and SharePoint, to keep information consistent across platforms. This automation ensures that updates made in one system are reflected in the other, reducing data redundancy and improving accuracy. The project includes scheduled runs and error notifications to maintain data integrity.</p>
-        </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate software developer with a strong interest in building innovative and user-friendly web applications. I have experience working with various technologies, including SharePoint SPFx, PowerApps, Power Automate, React, HTML, CSS, and JavaScript. I'm also proficient in cloud platforms, which allows me to create scalable and reliable solutions.</p>
+      <p>In my free time, I enjoy (add your hobbies or interests here). I'm always eager to learn new things and expand my skillset. Feel free to browse my projects to see some of the work I've done!</p>
     </section>
-    <section id="travel-blog" class="content">
-        <h2>Travel Blog</h2>
-        <div class="blog-post">
-            <h3>Exploring the Beaches of Goa</h3>
-            <p>My trip to Goa was an amazing experience filled with sun, sand, and sea. I enjoyed exploring the beautiful beaches, trying out water sports, and experiencing the vibrant nightlife. The local cuisine was a treat with its unique blend of spices and flavors.</p>
-        </div>
-        <div class="blog-post">
-            <h3>The Spiritual Journey to Puri</h3>
-            <p>Puri is a place of great spiritual significance. Visiting the Jagannath Temple was a profound experience. I also enjoyed the serene beaches and the rich cultural heritage of the city. The annual Rath Yatra festival was a sight to behold.</p>
-        </div>
-        <div class="blog-post">
-            <h3>Adventures in Gangtok</h3>
-            <p>Gangtok, the capital of Sikkim, offered breathtaking views of the Himalayas. I visited several monasteries, enjoyed the local cuisine, and trekked through scenic trails. The city's vibrant culture and friendly people made the trip unforgettable.</p>
-        </div>
-        <div class="blog-post">
-            <h3>Discovering Darjeeling</h3>
-            <p>Darjeeling, known for its tea plantations, was a delightful destination. I enjoyed the beautiful sunrise at Tiger Hill, visited the famous Darjeeling Himalayan Railway, and explored the lush tea gardens. The cool climate and serene environment were perfect for relaxation.</p>
-        </div>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>SharePoint SPFx</li>
+        <li>PowerApps</li>
+        <li>Power Automate</li>
+        <li>React</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Cloud Knowledge</li>
+      </ul>
     </section>
-    <footer>
-        <p>Contact: <a href="mailto:anuranjan638@gmail.com" style="color: white;">anuranjan638@gmail.com</a></p>
-    </footer>
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>Here are some of the projects I've been working on:</p>
+      <article class="project">
+        <h3>Project Title 1</h3>
+        <p>A brief description of your first project, including its purpose, technologies used, and any notable achievements.</p>
+        <a href="#">Link to project (optional)</a>  </article>
+      <article class="project">
+        <h3>Project Title 2</h3>
+        <p>A brief description of your second project, following the same format as the first.</p>
+        <a href="#">Link to project (optional)</a>  </article>
+      </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out to me at (your email address) or connect with me on LinkedIn: (your LinkedIn profile URL). I'm always open to discussing new opportunities and collaborations.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Anuranjan Singh</p>
+  </footer>
+
+  <script src="script.js"></script> (Optional: Include JavaScript file here)
 </body>
 </html>
