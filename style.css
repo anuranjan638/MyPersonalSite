@@ -1,0 +1,32 @@
+/* Media query for screens smaller than 768px (tablets and smartphones) */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  nav {
+    display: flex; /* Make navigation responsive */
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center links horizontally */
+  }
+
+  nav a {
+    margin: 5px 0; /* Adjust margin for vertical layout */
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  section {
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 1.2em; /* Adjust heading size for smaller screens */
+  }
+}
